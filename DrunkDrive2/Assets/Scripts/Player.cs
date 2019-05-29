@@ -15,12 +15,22 @@ public class Player : MonoBehaviour
     [SerializeField]
     float MovementSpeed;
 
+    private CameraController cameraController;
+    [SerializeField]
+    private GameObject Target;
+
     Direction direction;
 
     // Start is called before the first frame update
     void Start()
     {
         direction = Direction.Right;
+        cameraController = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraController>();
+        if (cameraController)
+        {
+            Debug.Log("Se encontro la camara bien jeje");
+            cameraController.SetTarget(Target);
+        }
     }
 
     // Update is called once per frame
@@ -37,7 +47,7 @@ public class Player : MonoBehaviour
                 direction = Direction.Right;
             }
         }
-        gameObject.transform.Translate(0, 0, -MovementSpeed * Time.deltaTime);
+        gameObject.transform.Translate(0, 0, MovementSpeed * Time.deltaTime);
         gameObject.transform.Rotate(0, (RotationSpeed * (int) direction) * Time.deltaTime, 0);
     }
 }
