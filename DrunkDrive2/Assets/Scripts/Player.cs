@@ -11,11 +11,13 @@ public class Player : MonoBehaviour
     }
 
     [SerializeField]
+    private CheckPointController mainCamera;
+
+    [SerializeField]
     float RotationSpeed;
     [SerializeField]
     float MovementSpeed;
-
-    private CameraController cameraController;
+    
     [SerializeField]
     private GameObject Target;
 
@@ -25,12 +27,6 @@ public class Player : MonoBehaviour
     void Start()
     {
         direction = Direction.Right;
-        cameraController = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraController>();
-        if (cameraController)
-        {
-            Debug.Log("Se encontro la camara bien jeje");
-            cameraController.SetTarget(Target);
-        }
     }
 
     // Update is called once per frame
@@ -49,5 +45,15 @@ public class Player : MonoBehaviour
         }
         gameObject.transform.Translate(0, 0, MovementSpeed * Time.deltaTime);
         gameObject.transform.Rotate(0, (RotationSpeed * (int) direction) * Time.deltaTime, 0);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "CameraCheckPoint")
+        {
+            mainCamera.ActiveCamera(false);
+            mainCamera = other.GetComponent<CheckPointController>();
+            mainCamera.ActiveCamera(true);
+        }
     }
 }
