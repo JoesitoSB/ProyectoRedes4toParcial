@@ -7,6 +7,8 @@ public class CheckPointController : MonoBehaviour
     [SerializeField]
     private Camera camera;
     [SerializeField]
+    private CheckPointController lastCheckPointController;
+    [SerializeField]
     private bool isTheMainCamera = false;
 
     // Start is called before the first frame update
