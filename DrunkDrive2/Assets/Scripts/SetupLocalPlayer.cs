@@ -18,10 +18,25 @@ public class SetupLocalPlayer : NetworkBehaviour
         }
     }
 
+    [SyncVar(hook = "Winner")]
+    private bool youWin;
+
+    void Winner(bool _youwin)
+    {
+        youWin = _youwin;
+    }
+
+    [Command]
+    public void CmdCheckWinner()
+    {
+         youWin = GameController.instance.theGameIsOver;
+    }
+
     // Update is called once per frame
 
     void Update()
     {
+        CmdCheckWinner();
     }
 
 }
