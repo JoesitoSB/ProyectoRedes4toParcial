@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class Player : MonoBehaviour
 {
@@ -17,9 +18,13 @@ public class Player : MonoBehaviour
     float RotationSpeed;
     [SerializeField]
     float MovementSpeed;
-    
+
     [SerializeField]
     private GameObject Target;
+
+    [SerializeField]
+    private int numberOfCheckPoints;
+    private List<CheckPointController> checkPoints = new List<CheckPointController>();
 
     Direction direction;
 
@@ -32,9 +37,9 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0))
         {
-            if(direction == Direction.Right)
+            if (direction == Direction.Right)
             {
                 direction = Direction.Left;
             }
@@ -44,16 +49,19 @@ public class Player : MonoBehaviour
             }
         }
         gameObject.transform.Translate(0, 0, MovementSpeed * Time.deltaTime);
-        gameObject.transform.Rotate(0, (RotationSpeed * (int) direction) * Time.deltaTime, 0);
+        gameObject.transform.Rotate(0, (RotationSpeed * (int)direction) * Time.deltaTime, 0);
+
+        if (checkPoints.Count >= numberOfCheckPoints)
+        {
+            Debug.Log("Win");
+        }
     }
 
-    private void OnTriggerEnter(Collider other)
+    public void AddCheckPoint(CheckPointController _checkPointController)
     {
-        if(other.gameObject.tag == "CameraCheckPoint")
+        if(!checkPoints.Contains(_checkPointController))
         {
-            mainCamera.ActiveCamera(false);
-            mainCamera = other.GetComponent<CheckPointController>();
-            mainCamera.ActiveCamera(true);
+            checkPoints.Add(_checkPointController);
         }
     }
 }
