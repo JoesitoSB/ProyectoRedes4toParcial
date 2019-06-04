@@ -47,6 +47,18 @@ public class GameController : MonoBehaviour
         }
     }
 
+    public void ResetGameController()
+    {
+        theGameIsOver = false;
+        gameOverScreen.SetActive(false);
+        txt_gameOver.text = "";
+    }
+
+    public bool GetGameIsOver()
+    {
+        return theGameIsOver;
+    }
+
     public void WinGame()
     {
         theGameIsOver = true;

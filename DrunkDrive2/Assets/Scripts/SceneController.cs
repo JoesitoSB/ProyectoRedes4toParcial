@@ -10,6 +10,11 @@ public class SceneController : MonoBehaviour
         SceneManager.LoadScene(_index, LoadSceneMode.Single);
     }
 
+    public void ReloadScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex, LoadSceneMode.Single);
+    }
+
     public void ExitGame()
     {
         Application.Quit();

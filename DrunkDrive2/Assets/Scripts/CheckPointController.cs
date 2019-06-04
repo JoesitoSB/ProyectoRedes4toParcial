@@ -10,6 +10,8 @@ public class CheckPointController : MonoBehaviour
     private CheckPointController lastCheckPointController;
     [SerializeField]
     private bool isTheMainCamera = false;
+    [SerializeField]
+    private AudioSource checkPointSound;
 
     // Start is called before the first frame update
     void Start()
@@ -74,7 +76,7 @@ public class CheckPointController : MonoBehaviour
                 lastCheckPointController.GetCamera().gameObject.SetActive(true);
             }
             var player = other.GetComponent<Player>();
-            player.AddCheckPoint(this);
+            player.AddCheckPoint(this, checkPointSound);
         }
     }
 }

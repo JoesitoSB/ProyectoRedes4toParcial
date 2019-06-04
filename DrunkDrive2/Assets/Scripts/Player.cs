@@ -11,6 +11,13 @@ public class Player : MonoBehaviour
         Left = -1
     }
 
+    public enum GameState
+    {
+        Play,
+        Win,
+        Lose
+    }
+
     [SerializeField]
     private CheckPointController mainCamera;
 
@@ -27,41 +34,107 @@ public class Player : MonoBehaviour
     private List<CheckPointController> checkPoints = new List<CheckPointController>();
 
     Direction direction;
+    GameState gameState;
+
+    //sfx clips
+    [SerializeField]
+    private AudioSource chocar1;
+    [SerializeField]
+    private AudioSource chocar2;
+    [SerializeField]
+    private AudioSource derrape1;
+    [SerializeField]
+    private AudioSource aceleración;
 
     // Start is called before the first frame update
     void Start()
     {
         direction = Direction.Right;
+        gameState = GameState.Play;
+        if (GameController.instance)
+            GameController.instance.ResetGameController();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (!GameController.instance || !GameController.instance.GetGameIsOver())
         {
-            if (direction == Direction.Right)
+            if (!aceleración.isPlaying)
+                aceleración.Play();
+
+            if (Input.GetMouseButtonDown(0))
             {
-                direction = Direction.Left;
+                if (Random.Range(0, 5) == 2)
+                {
+                    if (!derrape1.isPlaying)
+                    {
+                        derrape1.Play();
+                    }
+                }
+
+                if (direction == Direction.Right)
+                {
+                    direction = Direction.Left;
+                }
+                else
+                {
+                    direction = Direction.Right;
+                }
             }
-            else
+            gameObject.transform.Translate(0, 0, MovementSpeed * Time.deltaTime);
+            gameObject.transform.Rotate(0, (RotationSpeed * (int)direction) * Time.deltaTime, 0);
+        }
+        if (!GameController.instance.GetGameIsOver() && gameState == GameState.Play)
+        {
+            if (checkPoints.Count >= numberOfCheckPoints)
             {
-                direction = Direction.Right;
+                Debug.Log("Win");
+                gameState = GameState.Win;
+                GameController.instance.WinGame();
             }
         }
-        gameObject.transform.Translate(0, 0, MovementSpeed * Time.deltaTime);
-        gameObject.transform.Rotate(0, (RotationSpeed * (int)direction) * Time.deltaTime, 0);
-
-        if (checkPoints.Count >= numberOfCheckPoints)
+        else
         {
-            Debug.Log("Win");
+            if (gameState == GameState.Play)
+            {
+                Debug.Log("Lose");
+                gameState = GameState.Lose;
+                GameController.instance.LoseGame();
+            }
         }
     }
 
-    public void AddCheckPoint(CheckPointController _checkPointController)
+    public void AddCheckPoint(CheckPointController _checkPointController, AudioSource _checkPointSound)
     {
         if(!checkPoints.Contains(_checkPointController))
         {
+            _checkPointSound.Play();
             checkPoints.Add(_checkPointController);
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "Road" || collision.gameObject.tag == "Player")
+        {
+            var randomFX = Random.Range(0, 3);
+
+            switch(randomFX)
+            {
+                case 1:
+                    if (!chocar1.isPlaying)
+                        chocar1.Play();
+                    break;
+                case 2:
+                    if (!chocar2.isPlaying)
+                        chocar2.Play();
+                    break;
+                default:
+                    if (!chocar1.isPlaying)
+                        chocar1.Play();
+                    break;
+            }
         }
     }
 }

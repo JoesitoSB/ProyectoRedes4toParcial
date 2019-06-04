@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - CameraCheckPoint
+  - Road
   layers:
   - Default
   - TransparentFX
