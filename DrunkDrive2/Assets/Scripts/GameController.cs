@@ -7,7 +7,7 @@ public class GameController : MonoBehaviour
 {
     //Añadir funcionalidad para que al dar tap continue al siguiente juego en automatico
     public static GameController instance;
-    private bool theGameIsOver = false;
+    public bool theGameIsOver = false;
 
     [SerializeField]
     private GameObject gameOverScreen;
