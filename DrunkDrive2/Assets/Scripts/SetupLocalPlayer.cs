@@ -10,7 +10,9 @@ public class SetupLocalPlayer : NetworkBehaviour
     {
         if (isLocalPlayer)
         {
-            GetComponent<Player>().enabled = true;
+            var localPlayer = GetComponent<Player>();
+            localPlayer.enabled = true;
+            localPlayer.SetMainCamera(GameObject.Find("PlayerConfig").GetComponent<PlayerConfig>().mainCamera);
         }
         else
         {

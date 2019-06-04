@@ -105,6 +105,11 @@ public class Player : MonoBehaviour
         }
     }
 
+    public void SetMainCamera(CheckPointController _checkPointController)
+    {
+        mainCamera = _checkPointController;
+    }
+
     public void AddCheckPoint(CheckPointController _checkPointController, AudioSource _checkPointSound)
     {
         if(!checkPoints.Contains(_checkPointController))
