@@ -60,23 +60,27 @@ public class CheckPointController : MonoBehaviour
     {
         if(other.gameObject.tag == "Player")
         {
-            Debug.Log("Paso el player");
-            if(!camera.gameObject.activeInHierarchy)
+            var islocalPlayer = other.GetComponent<SetupLocalPlayer>().isLocalPlayer;
+            if (islocalPlayer)
             {
-                Debug.Log("La camara no estaba activa");
-                //ActiveCamera(true);
-                camera.gameObject.SetActive(true);
-                lastCheckPointController.GetCamera().gameObject.SetActive(false);
+                Debug.Log("Paso el player");
+                if(!camera.gameObject.activeInHierarchy)
+                {
+                    Debug.Log("La camara no estaba activa");
+                    //ActiveCamera(true);
+                    camera.gameObject.SetActive(true);
+                    lastCheckPointController.GetCamera().gameObject.SetActive(false);
+                }
+                else
+                {
+                    Debug.Log("La camara si estaba activa");
+                    //ActiveCamera(false);
+                    camera.gameObject.SetActive(false);
+                    lastCheckPointController.GetCamera().gameObject.SetActive(true);
+                }
+                var player = other.GetComponent<Player>();
+                player.AddCheckPoint(this, checkPointSound);
             }
-            else
-            {
-                Debug.Log("La camara si estaba activa");
-                //ActiveCamera(false);
-                camera.gameObject.SetActive(false);
-                lastCheckPointController.GetCamera().gameObject.SetActive(true);
-            }
-            var player = other.GetComponent<Player>();
-            player.AddCheckPoint(this, checkPointSound);
         }
     }
 }
