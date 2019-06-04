@@ -14,9 +14,9 @@ public class GameController : MonoBehaviour
     [SerializeField]
     private Text txt_gameOver;
     [SerializeField]
-    private Color color;
-    [SerializeField]
     private AudioSource audioSource;
+    [SerializeField]
+    private Material carColor;
 
 
     void Awake()
@@ -71,5 +71,10 @@ public class GameController : MonoBehaviour
         theGameIsOver = true;
         gameOverScreen.SetActive(true);
         txt_gameOver.text = "You Lose :(";
+    }
+
+    public void ChangeColor(Color _color)
+    {
+        carColor.color = _color;
     }
 }

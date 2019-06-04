@@ -509,10 +509,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 191adf9bc6821fd42b9317bca563b1b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  theGameIsOver: 0
   gameOverScreen: {fileID: 8518597878156297515}
   txt_gameOver: {fileID: 8518597877718449782}
   color: {r: 0, g: 0, b: 0, a: 0}
   audioSource: {fileID: 8518597877726087415}
+  carColor: {fileID: 2100000, guid: 7bc90266b6dd0c74bb2a114313d08528, type: 2}
 --- !u!114 &8518597877726087414
 MonoBehaviour:
   m_ObjectHideFlags: 0
