@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -347,7 +347,7 @@ PrefabInstance:
     - target: {fileID: 7361518845018249914, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
         type: 3}
       propertyPath: m_Name
-      value: CheckPointWithCamera (8)
+      value: CheckPointWithCamera 8
       objectReference: {fileID: 0}
     - target: {fileID: 1888636720761006491, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
         type: 3}
@@ -404,16 +404,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -3.348
       objectReference: {fileID: 0}
-    - target: {fileID: 4869488683389907886, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
-        type: 3}
-      propertyPath: isTheMainCamera
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4869488683389907886, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
-        type: 3}
-      propertyPath: lastCheckPointController
-      value: 
-      objectReference: {fileID: 1596992920}
     - target: {fileID: 6546138927728740484, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -464,6 +454,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 3.1740003
       objectReference: {fileID: 0}
+    - target: {fileID: 4869488683389907886, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
+        type: 3}
+      propertyPath: isTheMainCamera
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869488683389907886, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
+        type: 3}
+      propertyPath: lastCheckPointController
+      value: 
+      objectReference: {fileID: 1344548687}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4c79cab17478a54b9bccb0d0fbdcf49, type: 3}
 --- !u!1001 &67763408
@@ -1610,7 +1610,7 @@ PrefabInstance:
     - target: {fileID: 7361518845018249914, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
         type: 3}
       propertyPath: m_Name
-      value: CheckPointWithCamera (2)
+      value: CheckPointWithCamera 2
       objectReference: {fileID: 0}
     - target: {fileID: 1888636720761006491, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
         type: 3}
@@ -1667,16 +1667,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4869488683389907886, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
-        type: 3}
-      propertyPath: isTheMainCamera
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4869488683389907886, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
-        type: 3}
-      propertyPath: lastCheckPointController
-      value: 
-      objectReference: {fileID: 1357824075}
     - target: {fileID: 6546138927728740484, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -1722,6 +1712,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -35.39
       objectReference: {fileID: 0}
+    - target: {fileID: 4869488683389907886, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
+        type: 3}
+      propertyPath: isTheMainCamera
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869488683389907886, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
+        type: 3}
+      propertyPath: lastCheckPointController
+      value: 
+      objectReference: {fileID: 1065916543}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4c79cab17478a54b9bccb0d0fbdcf49, type: 3}
 --- !u!1001 &383439640
@@ -1734,7 +1734,7 @@ PrefabInstance:
     - target: {fileID: 7361518845018249914, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
         type: 3}
       propertyPath: m_Name
-      value: CheckPointWithCamera (5)
+      value: CheckPointWithCamera 5
       objectReference: {fileID: 0}
     - target: {fileID: 1888636720761006491, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
         type: 3}
@@ -1791,16 +1791,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -2.102
       objectReference: {fileID: 0}
-    - target: {fileID: 4869488683389907886, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
-        type: 3}
-      propertyPath: isTheMainCamera
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4869488683389907886, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
-        type: 3}
-      propertyPath: lastCheckPointController
-      value: 
-      objectReference: {fileID: 588215180}
     - target: {fileID: 6546138927728740484, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -1846,6 +1836,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -11.9
       objectReference: {fileID: 0}
+    - target: {fileID: 4869488683389907886, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
+        type: 3}
+      propertyPath: isTheMainCamera
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869488683389907886, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
+        type: 3}
+      propertyPath: lastCheckPointController
+      value: 
+      objectReference: {fileID: 588215180}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4c79cab17478a54b9bccb0d0fbdcf49, type: 3}
 --- !u!1001 &402062638
@@ -2233,7 +2233,7 @@ PrefabInstance:
     - target: {fileID: 7361518845018249914, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
         type: 3}
       propertyPath: m_Name
-      value: CheckPointWithCamera (9)
+      value: CheckPointWithCamera 10
       objectReference: {fileID: 0}
     - target: {fileID: 1888636720761006491, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
         type: 3}
@@ -2290,16 +2290,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -2.907
       objectReference: {fileID: 0}
-    - target: {fileID: 4869488683389907886, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
-        type: 3}
-      propertyPath: isTheMainCamera
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4869488683389907886, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
-        type: 3}
-      propertyPath: lastCheckPointController
-      value: 
-      objectReference: {fileID: 1298881451}
     - target: {fileID: 6546138927728740484, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -2350,6 +2340,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.47100002
       objectReference: {fileID: 0}
+    - target: {fileID: 4869488683389907886, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
+        type: 3}
+      propertyPath: isTheMainCamera
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869488683389907886, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
+        type: 3}
+      propertyPath: lastCheckPointController
+      value: 
+      objectReference: {fileID: 1298881451}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4c79cab17478a54b9bccb0d0fbdcf49, type: 3}
 --- !u!1001 &458891760
@@ -2739,6 +2739,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 609116486}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &636466018 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4869488683389907886, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
+    type: 3}
+  m_PrefabInstance: {fileID: 843489938}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50a3227ebcd3c72429bc64f5a2734738, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &642839953
 GameObject:
   m_ObjectHideFlags: 0
@@ -2959,7 +2971,7 @@ PrefabInstance:
         type: 3}
       propertyPath: lastCheckPointController
       value: 
-      objectReference: {fileID: 1065916543}
+      objectReference: {fileID: 1349144607}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4c79cab17478a54b9bccb0d0fbdcf49, type: 3}
 --- !u!1001 &699917823
@@ -3577,7 +3589,7 @@ PrefabInstance:
     - target: {fileID: 7361518845018249914, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
         type: 3}
       propertyPath: m_Name
-      value: CheckPointWithCamera (6)
+      value: CheckPointWithCamera 6
       objectReference: {fileID: 0}
     - target: {fileID: 1888636720761006491, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
         type: 3}
@@ -3634,16 +3646,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0.328
       objectReference: {fileID: 0}
-    - target: {fileID: 4869488683389907886, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
-        type: 3}
-      propertyPath: isTheMainCamera
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4869488683389907886, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
-        type: 3}
-      propertyPath: lastCheckPointController
-      value: 
-      objectReference: {fileID: 1596992920}
     - target: {fileID: 6546138927728740484, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -3689,6 +3691,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -53.1
       objectReference: {fileID: 0}
+    - target: {fileID: 4869488683389907886, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
+        type: 3}
+      propertyPath: isTheMainCamera
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869488683389907886, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
+        type: 3}
+      propertyPath: lastCheckPointController
+      value: 
+      objectReference: {fileID: 1596992920}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4c79cab17478a54b9bccb0d0fbdcf49, type: 3}
 --- !u!1001 &860212595
@@ -4914,7 +4926,7 @@ PrefabInstance:
     - target: {fileID: 7361518845018249914, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
         type: 3}
       propertyPath: m_Name
-      value: CheckPointWithCamera (1)
+      value: CheckPointWithCamera 1
       objectReference: {fileID: 0}
     - target: {fileID: 1888636720761006491, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
         type: 3}
@@ -4971,16 +4983,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0.115
       objectReference: {fileID: 0}
-    - target: {fileID: 4869488683389907886, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
-        type: 3}
-      propertyPath: isTheMainCamera
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4869488683389907886, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
-        type: 3}
-      propertyPath: lastCheckPointController
-      value: 
-      objectReference: {fileID: 1239345256}
     - target: {fileID: 6546138927728740484, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -5026,6 +5028,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -35.39
       objectReference: {fileID: 0}
+    - target: {fileID: 4869488683389907886, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
+        type: 3}
+      propertyPath: isTheMainCamera
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869488683389907886, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
+        type: 3}
+      propertyPath: lastCheckPointController
+      value: 
+      objectReference: {fileID: 2068262749}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4c79cab17478a54b9bccb0d0fbdcf49, type: 3}
 --- !u!1001 &1174567217
@@ -5437,7 +5449,7 @@ PrefabInstance:
     - target: {fileID: 7361518845018249914, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
         type: 3}
       propertyPath: m_Name
-      value: CheckPointWithCamera (4)
+      value: CheckPointWithCamera 4
       objectReference: {fileID: 0}
     - target: {fileID: 1888636720761006491, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
         type: 3}
@@ -5494,16 +5506,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4869488683389907886, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
-        type: 3}
-      propertyPath: isTheMainCamera
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4869488683389907886, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
-        type: 3}
-      propertyPath: lastCheckPointController
-      value: 
-      objectReference: {fileID: 1596992920}
     - target: {fileID: 6546138927728740484, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5549,6 +5551,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -45.417004
       objectReference: {fileID: 0}
+    - target: {fileID: 4869488683389907886, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
+        type: 3}
+      propertyPath: isTheMainCamera
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869488683389907886, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
+        type: 3}
+      propertyPath: lastCheckPointController
+      value: 
+      objectReference: {fileID: 1357824075}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4c79cab17478a54b9bccb0d0fbdcf49, type: 3}
 --- !u!1001 &1330133207
@@ -5626,6 +5638,30 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1330133207}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1344548687 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4869488683389907886, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
+    type: 3}
+  m_PrefabInstance: {fileID: 1918702955}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50a3227ebcd3c72429bc64f5a2734738, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1349144607 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4869488683389907886, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
+    type: 3}
+  m_PrefabInstance: {fileID: 455845543}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50a3227ebcd3c72429bc64f5a2734738, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1355001587
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5636,7 +5672,7 @@ PrefabInstance:
     - target: {fileID: 7361518845018249914, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
         type: 3}
       propertyPath: m_Name
-      value: CheckPointWithCamera (10)
+      value: CheckPointWithCamera 9
       objectReference: {fileID: 0}
     - target: {fileID: 1888636720761006491, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
         type: 3}
@@ -5693,16 +5729,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -3.348
       objectReference: {fileID: 0}
-    - target: {fileID: 4869488683389907886, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
-        type: 3}
-      propertyPath: isTheMainCamera
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4869488683389907886, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
-        type: 3}
-      propertyPath: lastCheckPointController
-      value: 
-      objectReference: {fileID: 1480435205}
     - target: {fileID: 6546138927728740484, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -5753,6 +5779,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 3.1740003
       objectReference: {fileID: 0}
+    - target: {fileID: 4869488683389907886, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
+        type: 3}
+      propertyPath: isTheMainCamera
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869488683389907886, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
+        type: 3}
+      propertyPath: lastCheckPointController
+      value: 
+      objectReference: {fileID: 1480435205}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4c79cab17478a54b9bccb0d0fbdcf49, type: 3}
 --- !u!114 &1357824075 stripped
@@ -6562,7 +6598,7 @@ PrefabInstance:
     - target: {fileID: 7361518845018249914, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
         type: 3}
       propertyPath: m_Name
-      value: CheckPointWithCamera (3)
+      value: CheckPointWithCamera 3
       objectReference: {fileID: 0}
     - target: {fileID: 1888636720761006491, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
         type: 3}
@@ -6619,16 +6655,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4869488683389907886, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
-        type: 3}
-      propertyPath: isTheMainCamera
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4869488683389907886, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
-        type: 3}
-      propertyPath: lastCheckPointController
-      value: 
-      objectReference: {fileID: 588215180}
     - target: {fileID: 6546138927728740484, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -6674,6 +6700,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -34.9
       objectReference: {fileID: 0}
+    - target: {fileID: 4869488683389907886, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
+        type: 3}
+      propertyPath: isTheMainCamera
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869488683389907886, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
+        type: 3}
+      propertyPath: lastCheckPointController
+      value: 
+      objectReference: {fileID: 1239345256}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4c79cab17478a54b9bccb0d0fbdcf49, type: 3}
 --- !u!1001 &1792008487
@@ -7055,7 +7091,7 @@ PrefabInstance:
     - target: {fileID: 7361518845018249914, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
         type: 3}
       propertyPath: m_Name
-      value: CheckPointWithCamera (7)
+      value: CheckPointWithCamera 7
       objectReference: {fileID: 0}
     - target: {fileID: 1888636720761006491, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
         type: 3}
@@ -7112,16 +7148,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -2.3720002
       objectReference: {fileID: 0}
-    - target: {fileID: 4869488683389907886, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
-        type: 3}
-      propertyPath: isTheMainCamera
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4869488683389907886, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
-        type: 3}
-      propertyPath: lastCheckPointController
-      value: 
-      objectReference: {fileID: 1596992920}
     - target: {fileID: 6546138927728740484, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -7167,6 +7193,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -29.1
       objectReference: {fileID: 0}
+    - target: {fileID: 4869488683389907886, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
+        type: 3}
+      propertyPath: isTheMainCamera
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869488683389907886, guid: d4c79cab17478a54b9bccb0d0fbdcf49,
+        type: 3}
+      propertyPath: lastCheckPointController
+      value: 
+      objectReference: {fileID: 636466018}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4c79cab17478a54b9bccb0d0fbdcf49, type: 3}
 --- !u!1001 &1944248285
@@ -7254,6 +7290,11 @@ PrefabInstance:
     - target: {fileID: 6340266584056837265, guid: 34c724ff7f24aaa4688e57157a8ad838,
         type: 3}
       propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6340266584056837265, guid: 34c724ff7f24aaa4688e57157a8ad838,
+        type: 3}
+      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 6340266584056837269, guid: 34c724ff7f24aaa4688e57157a8ad838,
@@ -7849,3 +7890,114 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2133539228}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &3838786725535672784
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3838786725535970800}
+  - component: {fileID: 3838786725538837970}
+  - component: {fileID: 3838786725537871634}
+  m_Layer: 0
+  m_Name: Mesh (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &3838786725535672788
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3838786725535970804}
+  m_Layer: 0
+  m_Name: Vandera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3838786725535970800
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3838786725535672784}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3838786725535970804}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &3838786725535970804
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3838786725535672788}
+  m_LocalRotation: {x: -0.024755683, y: 0.45399296, z: -0.015844809, w: 0.8905204}
+  m_LocalPosition: {x: 45.1, y: 47.7, z: 37.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3838786725535970800}
+  m_Father: {fileID: 0}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &3838786725537871634
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3838786725535672784}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: ba03dc98a4eccea47b769f0b0f4ace69, type: 3}
+  - {fileID: 2100002, guid: ba03dc98a4eccea47b769f0b0f4ace69, type: 3}
+  - {fileID: 2100004, guid: ba03dc98a4eccea47b769f0b0f4ace69, type: 3}
+  - {fileID: 2100006, guid: ba03dc98a4eccea47b769f0b0f4ace69, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &3838786725538837970
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3838786725535672784}
+  m_Mesh: {fileID: 4300000, guid: ba03dc98a4eccea47b769f0b0f4ace69, type: 3}
