@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class GameController : MonoBehaviour
     private Text txt_gameOver;
     [SerializeField]
     private Color color;
+    [SerializeField]
+    private AudioSource audioSource;
 
 
     void Awake()
@@ -29,9 +32,19 @@ public class GameController : MonoBehaviour
         }
     }
 
-    private void Start()
+    private void Update()
     {
-
+        if(SceneManager.GetActiveScene().buildIndex == 0 || SceneManager.GetActiveScene().buildIndex == 1)
+        {
+            if (!audioSource.isPlaying)
+            {
+                audioSource.Play();
+            }
+        }
+        else
+        {
+            audioSource.Stop();
+        }
     }
 
     public void WinGame()
