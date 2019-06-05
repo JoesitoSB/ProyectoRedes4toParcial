@@ -55,6 +55,11 @@ public class Player : MonoBehaviour
             GameController.instance.ResetGameController();
     }
 
+    public void SetNumberOfCheckpoints(int _numberOfCheckpoints)
+    {
+        numberOfCheckPoints = _numberOfCheckpoints;
+    }
+
     // Update is called once per frame
     void Update()
     {
