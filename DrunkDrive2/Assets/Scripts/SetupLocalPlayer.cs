@@ -13,6 +13,7 @@ public class SetupLocalPlayer : NetworkBehaviour
             var localPlayer = GetComponent<Player>();
             localPlayer.enabled = true;
             localPlayer.SetMainCamera(GameObject.Find("PlayerConfig").GetComponent<PlayerConfig>().mainCamera);
+            localPlayer.SetNumberOfCheckpoints(GameObject.Find("PlayerConfig").GetComponent<PlayerConfig>().numberOfCheckPoints);
         }
         else
         {

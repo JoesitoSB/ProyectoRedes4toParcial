@@ -5,4 +5,5 @@ using UnityEngine;
 public class PlayerConfig : MonoBehaviour
 {
     public CheckPointController mainCamera;
+    public int numberOfCheckPoints;
 }
