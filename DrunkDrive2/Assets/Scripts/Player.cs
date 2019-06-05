@@ -58,6 +58,9 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        var setupLocalPlayer = GetComponent<SetupLocalPlayer>();
+        setupLocalPlayer.CmdCheckGameSatus();
+
         if (!GameController.instance || !GameController.instance.GetGameIsOver())
         {
             if (!aceleración.isPlaying)
@@ -85,13 +88,14 @@ public class Player : MonoBehaviour
             gameObject.transform.Translate(0, 0, MovementSpeed * Time.deltaTime);
             gameObject.transform.Rotate(0, (RotationSpeed * (int)direction) * Time.deltaTime, 0);
         }
-        if (!GameController.instance.GetGameIsOver() && gameState == GameState.Play)
+        if (!setupLocalPlayer.youWin && gameState == GameState.Play)
         {
             if (checkPoints.Count >= numberOfCheckPoints)
             {
                 Debug.Log("Win");
                 gameState = GameState.Win;
                 GameController.instance.WinGame();
+                //setupLocalPlayer.CmdWin();
             }
         }
         else
@@ -101,6 +105,7 @@ public class Player : MonoBehaviour
                 Debug.Log("Lose");
                 gameState = GameState.Lose;
                 GameController.instance.LoseGame();
+                //setupLocalPlayer.CmdLose();
             }
         }
     }
