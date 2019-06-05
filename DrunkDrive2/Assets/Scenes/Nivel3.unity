@@ -10619,6 +10619,11 @@ PrefabInstance:
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 1560809781}
+    - target: {fileID: 1687701977552155222, guid: 976bc0f0199405d49a23f20b27178191,
+        type: 3}
+      propertyPath: numberOfCheckPoints
+      value: 22
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 976bc0f0199405d49a23f20b27178191, type: 3}
 --- !u!1001 &905849363
